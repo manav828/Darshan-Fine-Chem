@@ -56,7 +56,7 @@
     revealEls.forEach(function (el) { el.classList.add("is-visible"); });
   }
 
-  /* ---- FAQ: close others when one opens ---- */
+  /* ---- FAQ: details-based (products overview page) ---- */
   document.querySelectorAll("[data-faq]").forEach(function (wrap) {
     var items = wrap.querySelectorAll("details");
     items.forEach(function (d) {
@@ -69,6 +69,30 @@
       });
     });
   });
+
+  /* ---- FAQ: button accordion (individual product pages) ---- */
+  document.querySelectorAll(".faq-question").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var expanded = btn.getAttribute("aria-expanded") === "true";
+      var answer = document.getElementById(btn.getAttribute("aria-controls"));
+
+      /* Close all others in the same list */
+      var list = btn.closest(".faq-list");
+      if (list) {
+        list.querySelectorAll(".faq-question").forEach(function (other) {
+          if (other !== btn) {
+            other.setAttribute("aria-expanded", "false");
+            var otherAnswer = document.getElementById(other.getAttribute("aria-controls"));
+            if (otherAnswer) otherAnswer.classList.remove("is-open");
+          }
+        });
+      }
+
+      btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+      if (answer) answer.classList.toggle("is-open", !expanded);
+    });
+  });
+
 
   /* ---- Contact form: assemble mailto enquiry ---- */
   var form = document.querySelector("[data-contact-form]");
@@ -100,4 +124,30 @@
       }
     });
   }
+
+  /* ---- Product Slider Controls ---- */
+  document.querySelectorAll(".product-slider-wrapper").forEach(function (wrapper) {
+    var slider = wrapper.querySelector(".product-slider");
+    var section = wrapper.closest("section");
+    if (!slider || !section) return;
+
+    var prevBtn = section.querySelector(".slider-btn--prev");
+    var nextBtn = section.querySelector(".slider-btn--next");
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", function () {
+        var card = slider.querySelector(".product-slider-card");
+        var scrollAmount = card ? card.offsetWidth + 20 : 300;
+        slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function () {
+        var card = slider.querySelector(".product-slider-card");
+        var scrollAmount = card ? card.offsetWidth + 20 : 300;
+        slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      });
+    }
+  });
 })();
+

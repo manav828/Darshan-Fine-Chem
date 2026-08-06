@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 100" width="340" height="100">
+  <defs>
+    <style>
+      .logo-cyan { fill: #0084C7; }
+      .logo-white { fill: #FFFFFF; }
+      .logo-slate { fill: #94A3B8; }
+      .logo-gold { stroke: #C89B3C; stroke-width: 3; stroke-linecap: round; }
+      .logo-text-title { fill: #FFFFFF; font-family: 'Barlow', 'Montserrat', 'Inter', sans-serif; font-weight: 800; font-size: 21px; letter-spacing: 0.04em; }
+      .logo-text-sub { fill: #94A3B8; font-family: 'Inter', 'Barlow', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; }
+      .logo-line { stroke: #94A3B8; stroke-width: 1.2; opacity: 0.75; }
+    </style>
+  </defs>
+
+  <!-- DFCPL Top Monogram -->
+  <g transform="translate(10, 4)">
+    <!-- D -->
+    <path class="logo-cyan" d="M 0,0 H 22 C 34,0 42,6 42,18 C 42,30 34,36 22,36 H 0 Z M 13,10 V 26 H 21 C 26,26 29,23 29,18 C 29,13 26,10 21,10 Z"/>
+
+    <!-- F with Slate & Gold Slash -->
+    <path class="logo-white" d="M 46,0 H 76 L 68,36 H 55 L 59,20 H 46 Z"/>
+    <line class="logo-gold" x1="60" y1="0" x2="52" y2="36"/>
+
+    <!-- C -->
+    <path class="logo-white" d="M 98,0 C 82,0 72,10 72,18 C 72,26 82,36 98,36 C 107,36 114,32 118,27 L 109,21 C 106,24 102,26 98,26 C 90,26 85,22 85,18 C 85,14 90,10 98,10 C 102,10 106,12 109,15 L 118,9 C 114,4 107,0 98,0 Z"/>
+
+    <!-- P -->
+    <path class="logo-cyan" d="M 122,0 H 146 C 158,0 164,5 164,14 C 164,23 158,27 146,27 H 135 V 36 H 122 Z M 135,9 V 18 H 145 C 150,18 152,16 152,14 C 152,11 150,9 145,9 Z"/>
+
+    <!-- L -->
+    <path class="logo-cyan" d="M 168,0 H 181 V 26 H 202 V 36 H 168 Z"/>
+  </g>
+
+  <!-- DARSHAN FINECHEM Text -->
+  <text x="170" y="66" text-anchor="middle" class="logo-text-title">DARSHAN FINECHEM</text>
+
+  <!-- PRIVATE LIMITED Subtitle with Rule Lines -->
+  <line class="logo-line" x1="12" y1="84" x2="68" y2="84"/>
+  <text x="170" y="88" text-anchor="middle" class="logo-text-sub">PRIVATE LIMITED</text>
+  <line class="logo-line" x1="272" y1="84" x2="328" y2="84"/>
+</svg>
