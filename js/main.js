@@ -82,6 +82,8 @@
         list.querySelectorAll(".faq-question").forEach(function (other) {
           if (other !== btn) {
             other.setAttribute("aria-expanded", "false");
+            var otherItem = other.closest(".faq-item");
+            if (otherItem) otherItem.classList.remove("is-open");
             var otherAnswer = document.getElementById(other.getAttribute("aria-controls"));
             if (otherAnswer) otherAnswer.classList.remove("is-open");
           }
@@ -89,6 +91,8 @@
       }
 
       btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+      var parentItem = btn.closest(".faq-item");
+      if (parentItem) parentItem.classList.toggle("is-open", !expanded);
       if (answer) answer.classList.toggle("is-open", !expanded);
     });
   });

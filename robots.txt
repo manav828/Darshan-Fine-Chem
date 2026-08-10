@@ -1,4 +1,4 @@
-# Darshan Fine Chem Pvt. Ltd. — robots.txt
+# Darshan Fine Chem Private Limited — robots.txt
 # Default: allow all crawlers, point to sitemap.
 
 User-agent: *

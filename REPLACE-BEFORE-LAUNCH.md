@@ -1,4 +1,4 @@
-# Darshan Fine Chem — Website: Things To Replace Before Launch
+# Darshan Fine Chem Private Limited — Website: Things To Replace Before Launch
 
 > New corporate site is built and verified (all pages return HTTP 200, JSON-LD is valid, all images present). Replace the following placeholders before going live.
 
@@ -82,4 +82,4 @@ grep -rIn "darshanfinechem.com\|98765\|GIDC Industrial Estate, Ankleshwar" . --i
 # (every <script type="application/ld+json"> must parse — re-run your validator or https://search.google.com/structured-data/testing-tool)
 ```
 
-Built Aug 2026 · Darshan Fine Chem Pvt. Ltd.
+Built Aug 2026 · Darshan Fine Chem Private Limited
