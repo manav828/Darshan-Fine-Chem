@@ -98,34 +98,62 @@
   });
 
 
-  /* ---- Contact form: assemble mailto enquiry ---- */
+  /* ---- Contact form: AJAX submission via Web3Forms ---- */
   var form = document.querySelector("[data-contact-form]");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var data = new FormData(form);
-      var get = function (k) { return (data.get(k) || "").toString().trim(); };
-
-      var subject = "Enquiry — " + (get("product") || "General") + (get("company") ? " — " + get("company") : "");
-      var lines = [
-        "Name: " + get("name"),
-        "Company: " + get("company"),
-        "Email: " + get("email"),
-        "Phone: " + get("phone"),
-        "Product of interest: " + get("product"),
-        "Estimated quantity: " + get("quantity"),
-        "",
-        "Requirement details:",
-        get("message")
-      ];
-      window.location.href = "mailto:" + form.getAttribute("data-contact-form") +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(lines.join("\n"));
-
       var note = form.querySelector(".form-status");
+      var submitBtn = form.querySelector("button[type='submit']");
+      var originalBtnHtml = submitBtn ? submitBtn.innerHTML : "Send Enquiry";
+
       if (note) {
-        note.textContent = "Your email client should now open with the enquiry pre-filled. If it does not, write to us directly at " + form.getAttribute("data-contact-form") + ".";
+        note.textContent = "Sending enquiry...";
+        note.style.color = "var(--navy)";
+        note.style.display = "block";
       }
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = "0.75";
+        submitBtn.innerHTML = "Sending...";
+      }
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: new FormData(form)
+      })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.success) {
+          if (note) {
+            note.textContent = "Thank you! Your enquiry has been received. Our sales team will get back to you shortly.";
+            note.style.color = "#15803d";
+            note.style.fontWeight = "600";
+            note.style.marginTop = "14px";
+          }
+          form.reset();
+        } else {
+          if (note) {
+            note.textContent = "Something went wrong. Please try again or write directly to sales@dfcpl.in.";
+            note.style.color = "#dc2626";
+            note.style.marginTop = "14px";
+          }
+        }
+      })
+      .catch(function () {
+        if (note) {
+          note.textContent = "Network error. Please try again or email us directly at sales@dfcpl.in.";
+          note.style.color = "#dc2626";
+          note.style.marginTop = "14px";
+        }
+      })
+      .finally(function () {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = "1";
+          submitBtn.innerHTML = originalBtnHtml;
+        }
+      });
     });
   }
 
