@@ -63,7 +63,7 @@ The site is static — host on GitHub Pages, Netlify, Vercel, or equivalent, all
 Hero / section photos are from **Pexels** (free for commercial use, no attribution required). If you swap them for your own plant photos, replace the files in `assets/img/` (keep filenames) so HTML references stay valid:
 - `hero-plant.jpg`, `aerial-plant.jpg`, `plant-exterior.jpg`, `pipelines.jpg`, `storage-tanks.jpg`, `water-treatment.jpg`
 - people: `team-engineers.jpg`, `worker-machinery.jpg`
-- product cards: `product-pcl3.jpg`, `product-pocl3.jpg`, `product-pcl5.jpg`, `product-p2o5.jpg`, `product-tpp.jpg`, `product-ppa.jpg`
+- product cards: `product-pcl3.png`, `product-pocl3.png`, `product-pcl5.png`, `product-p2o5.png`, `product-tpp.png`, `product-ppa.png`
 - industries: `industry-agro.jpg`, `industry-pharma.jpg`, `industry-dyes.jpg`
 - quality: `quality-lab.jpg`
 
