@@ -282,12 +282,31 @@
     var navToggle = document.querySelector(".nav-toggle");
     var mainNav = document.querySelector(".main-nav");
     if (navToggle && mainNav) {
-      navToggle.onclick = function () {
+      navToggle.onclick = function (e) {
+        e.stopPropagation();
         var open = mainNav.classList.toggle("is-open");
         navToggle.classList.toggle("is-open", open);
         navToggle.setAttribute("aria-expanded", open ? "true" : "false");
       };
+
+      var dropdown = mainNav.querySelector(".nav-dropdown");
+      if (dropdown) {
+        var dropLink = dropdown.querySelector(":scope > a");
+        if (dropLink) {
+          dropLink.onclick = function (e) {
+            if (window.innerWidth <= 991) {
+              e.preventDefault();
+              e.stopPropagation();
+              dropdown.classList.toggle("is-open");
+            }
+          };
+        }
+      }
+
       mainNav.querySelectorAll("a").forEach(function (a) {
+        if (a.closest(".nav-dropdown") && a === a.closest(".nav-dropdown").querySelector(":scope > a")) {
+          return;
+        }
         a.onclick = function () {
           mainNav.classList.remove("is-open");
           navToggle.classList.remove("is-open");

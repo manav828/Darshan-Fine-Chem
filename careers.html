@@ -54,41 +54,23 @@
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- ============ TOPBAR ============ -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <div class="topbar-group">
-        <a class="topbar-item" href="mailto:sales@dfcpl.in">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <path d="m3 7 9 6 9-6" />
-          </svg>
-          sales@dfcpl.in
-        </a>
-        <a class="topbar-item" href="tel:+918758737803">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path
-              d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2.05Z" />
-          </svg>
-          +91 87587 37803
-        </a>
-      </div>
-      <div class="topbar-group topbar-group--right">
-        <span class="topbar-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z" />
-            <circle cx="12" cy="10" r="2.6" />
-          </svg>
-          Vadodara &amp; Sayakha GIDC, Gujarat, India
-        </span>
-        <span class="topbar-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4Z" />
-            <path d="m8.8 12 2.2 2.2 4.2-4.4" />
-          </svg>
-          COA &amp; SDS with every batch
-        </span>
-      </div>
+      <a class="topbar-item" href="mailto:sales@dfcpl.in">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path d="m3 7 9 6 9-6" />
+        </svg>
+        sales@dfcpl.in
+      </a>
+      <span class="topbar-center">Darshan Fine Chem Private Limited</span>
+      <a class="topbar-item" href="tel:+918758737803">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2.05Z" />
+        </svg>
+        +91 87587 37803
+      </a>
     </div>
   </div>
 
@@ -268,23 +250,26 @@
                 </div>
               </div>
 
-              <!-- 3. RESUME & MESSAGE -->
+              <!-- 3. PROFILE & MESSAGE -->
               <div class="form-section-divider">
-                <h3 class="form-section-title"><span class="step-num">3</span> Resume &amp; Message</h3>
+                <h3 class="form-section-title"><span class="step-num">3</span> Resume Link &amp; Details</h3>
               </div>
 
               <div class="form-field">
-                <label for="resume">Upload Resume / CV <i>*</i></label>
-                <div class="file-upload-wrap">
-                  <input type="file" id="resume" name="attachment" accept=".pdf,.doc,.docx" required>
-                  <span class="file-upload-hint">Accepted formats: <strong>PDF, DOC, DOCX</strong> | Maximum file size: <strong>5 MB</strong></span>
-                </div>
+                <label for="cv_link">LinkedIn Profile / Google Drive Resume Link</label>
+                <input type="url" id="cv_link" name="resume_or_linkedin_link"
+                  placeholder="https://linkedin.com/in/yourprofile or Google Drive link">
+                <span class="file-upload-hint">Paste your LinkedIn profile URL, Google Drive, or cloud link to your resume.</span>
               </div>
 
               <div class="form-field">
-                <label for="message">Cover Letter / Message</label>
-                <textarea id="message" name="message" rows="4"
-                  placeholder="Tell us briefly about yourself and why you would like to join DARSHAN Industries"></textarea>
+                <label for="message">Summary / Key Experience / Skills <i>*</i></label>
+                <textarea id="message" name="message" rows="4" required
+                  placeholder="Briefly describe your experience, skills, and why you would like to join DARSHAN Industries."></textarea>
+              </div>
+
+              <div style="background: var(--sky); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; margin-bottom: 20px; font-size: 0.88rem; color: var(--body);">
+                <strong style="color: var(--navy);">Tip:</strong> You can also send your detailed CV document directly to our HR team at <a href="mailto:info@dfcpl.in?subject=Job%20Application" style="color: var(--accent); font-weight: 600; text-decoration: underline;">info@dfcpl.in</a> / <a href="mailto:sales@dfcpl.in?subject=Job%20Application" style="color: var(--accent); font-weight: 600; text-decoration: underline;">sales@dfcpl.in</a>.
               </div>
 
               <!-- 4. APPLICATION CONFIRMATION -->
@@ -307,15 +292,6 @@
                 Our HR team will review your application and contact you if your profile matches a current or future opportunity.
               </p>
             </form>
-          </div>
-
-          <!-- Direct HR Contact Box -->
-          <div class="card" style="margin-top: 36px; padding: 24px 30px; background: #ffffff; border: 1px solid var(--border-light); border-radius: 12px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;">
-            <div>
-              <h4 class="h4" style="font-size: 1.1rem; margin-bottom: 4px; color: var(--navy);">Prefer Direct Email?</h4>
-              <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">You can also email your CV directly to our HR team at <a href="mailto:info@dfcpl.in" style="color: var(--accent); font-weight: 600;">info@dfcpl.in</a> or <a href="mailto:sales@dfcpl.in" style="color: var(--accent); font-weight: 600;">sales@dfcpl.in</a>.</p>
-            </div>
-            <a href="contact.html" class="btn btn--navy btn--sm">Contact Us &rarr;</a>
           </div>
 
         </div>
