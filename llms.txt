@@ -23,7 +23,7 @@
 - Molar mass: 137.33 g/mol
 - Boiling point: 76 °C | Melting point: −93.6 °C
 - Density: 1.574 g/cm³ at 20 °C
-- Packing: 250 kg HDPE-lined steel drums; ISO tanks; bulk tanker
+- Packing: 200 kg MS drums; ISO tanks; bulk tanker
 - Key uses: Agrochemical intermediates (glyphosate, organophosphate pesticides), pharmaceutical API intermediates, phosphorous acid production, flame retardant and plasticizer synthesis, chlorinating agent in organic chemistry
 - Product page: https://www.darshanfinechem.com/product-phosphorus-trichloride.html
 
@@ -54,7 +54,7 @@
 - Assay: ≥ 98.5% (as P₂O₅)
 - Molar mass: 141.94 g/mol
 - Melting point: ~340 °C (sublimes ~360 °C)
-- Packing: 25 kg or 50 kg airtight steel or HDPE drums; nitrogen-blanketed
+- Packing: 50 kg open mouth drums; nitrogen-blanketed
 - Key uses: Strongest industrial desiccant (residual moisture < 0.00002 mg/L in dried gases), pharmaceutical cyclization/dehydration reactions (benzimidazoles, quinolines), Polyphosphoric Acid (PPA) production, specialty phosphate ester synthesis, gas drying, optical glass manufacturing
 - Product page: https://www.darshanfinechem.com/product-phosphorus-pentoxide.html
 
