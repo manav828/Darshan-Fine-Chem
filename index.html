@@ -450,48 +450,69 @@
         <div class="section-head section-head--split reveal">
           <div class="head-text">
             <p class="eyebrow">Industries We Serve</p>
-            <h2 class="h2">Critical intermediates for four key sectors</h2>
+            <h2 class="h2">Critical phosphorus intermediates across key sectors</h2>
           </div>
           <a href="contact.html" class="btn btn--outline-navy">Discuss Your Requirement <span class="arrow"
               aria-hidden="true">&rarr;</span></a>
         </div>
-        <div class="ind-grid">
-          <a class="ind-card reveal" href="contact.html">
-            <img src="assets/img/industry-agro.jpg"
-              alt="Tractor spraying crop-protection chemicals on a green agricultural field" loading="lazy">
-            <div class="ind-content">
-              <span class="ind-tag">Agrochemicals</span>
-              <h3>Crop Protection</h3>
-              <p>Intermediates for herbicide and insecticide synthesis, including glyphosate-route chemistry.</p>
+
+        <div class="industry-showcase reveal" data-industry-showcase>
+          <!-- Background Screens Layer using provided images -->
+          <div class="industry-screens">
+            <div class="industry-slide is-active" data-industry-slide="pharma">
+              <img src="assets/products/pharmaceticals.jpeg" alt="Pharmaceutical industry chemical solutions" loading="lazy">
             </div>
-          </a>
-          <a class="ind-card reveal reveal-delay-1" href="contact.html">
-            <img src="assets/img/industry-pharma.jpg"
-              alt="Researcher in protective gear working with chemicals in a pharmaceutical laboratory" loading="lazy">
-            <div class="ind-content">
-              <span class="ind-tag">Pharmaceuticals</span>
-              <h3>API Synthesis</h3>
-              <p>Chlorinating agents and reagents for APIs, vitamins and fine pharmaceutical intermediates.</p>
+            <div class="industry-slide" data-industry-slide="agro">
+              <img src="assets/products/AGROCHEMICALS.jpeg" alt="Agrochemicals and crop protection" loading="lazy">
             </div>
-          </a>
-          <a class="ind-card reveal reveal-delay-2" href="contact.html">
-            <img src="assets/img/industry-dyes.jpg"
-              alt="Glass containers with vividly colored powders used in dye and pigment manufacturing" loading="lazy">
-            <div class="ind-content">
-              <span class="ind-tag">Dyes &amp; Pigments</span>
-              <h3>Colour Chemistry</h3>
-              <p>Precursors and intermediates for dye manufacturing and pigment processing chains.</p>
+            <div class="industry-slide" data-industry-slide="paint">
+              <img src="assets/products/PAINT INDUSTRY.jpeg" alt="Paint and coating industry chemistry" loading="lazy">
             </div>
-          </a>
-          <a class="ind-card reveal reveal-delay-3" href="contact.html">
-            <img src="assets/img/pipelines.jpg" alt="Industrial pipelines at a specialty chemicals processing plant"
-              loading="lazy">
-            <div class="ind-content">
-              <span class="ind-tag">Specialty Chemicals</span>
-              <h3>Performance Materials</h3>
-              <p>Building blocks for flame retardants, plasticizers, surfactants and battery chemicals.</p>
+            <div class="industry-slide" data-industry-slide="dyes">
+              <img src="assets/products/PIGMENT INDUSTRYS.jpeg" alt="Dyes and pigment manufacturing" loading="lazy">
             </div>
-          </a>
+            <div class="industry-slide" data-industry-slide="rubber">
+              <img src="assets/products/RUBER INDUSTRY.jpeg" alt="Rubber and polymer processing" loading="lazy">
+            </div>
+            <div class="industry-slide" data-industry-slide="plastics">
+              <img src="assets/products/plastic industry.jpeg" alt="Plastics and polymer stabilization" loading="lazy">
+            </div>
+            <div class="industry-slide" data-industry-slide="ev">
+              <img src="assets/products/EV Industys.jpeg" alt="EV and battery chemicals" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Bottom Interactive Pill Buttons -->
+          <div class="industry-pills-grid" role="tablist" aria-label="Industries">
+            <button type="button" class="industry-pill is-active" data-industry-target="pharma" role="tab" aria-selected="true">
+              <span>Pharmaceuticals</span>
+              <svg class="pill-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <button type="button" class="industry-pill" data-industry-target="agro" role="tab" aria-selected="false">
+              <span>Agro Chemicals</span>
+              <svg class="pill-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <button type="button" class="industry-pill" data-industry-target="paint" role="tab" aria-selected="false">
+              <span>Paint</span>
+              <svg class="pill-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <button type="button" class="industry-pill" data-industry-target="dyes" role="tab" aria-selected="false">
+              <span>Dyes Stuff</span>
+              <svg class="pill-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <button type="button" class="industry-pill" data-industry-target="rubber" role="tab" aria-selected="false">
+              <span>Rubber</span>
+              <svg class="pill-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <button type="button" class="industry-pill" data-industry-target="plastics" role="tab" aria-selected="false">
+              <span>Plastics</span>
+              <svg class="pill-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <button type="button" class="industry-pill" data-industry-target="ev" role="tab" aria-selected="false">
+              <span>EV Industry</span>
+              <svg class="pill-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -580,9 +601,10 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand" aria-label="Darshan Fine Chem Private Limited — home">
-            <div style="background: #ffffff; padding: 6px 14px; border-radius: 8px; display: inline-block;"><img
-                src="assets/img/dfcpl-logo.png" alt="DFCPL - Darshan Fine Chem Private Limited"
-                style="height: 48px; width: auto; display: block;"></div>
+            <div class="footer-logo-wrap">
+              <img src="assets/img/dfcpl-logo.png" alt="DFCPL - Darshan Fine Chem Private Limited"
+                style="height: 48px; width: auto; display: block;">
+            </div>
           </a>
           <p>Specialized manufacturer of high-purity phosphorus derivatives for the agrochemical, pharmaceutical, dye
             and specialty chemical industries.</p>
@@ -690,11 +712,6 @@
   </footer>
 
   <script src="js/main.js"></script>
-</body>
-
-</html>
-
-<script src="js/main.js"></script>
 </body>
 
 </html>

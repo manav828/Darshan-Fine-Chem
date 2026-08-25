@@ -38,6 +38,38 @@
       revealEls.forEach(function (el) { el.classList.add("is-visible"); });
     }
 
+    /* ---- Interactive Industry Showcase (Dynamic Hover & Tap) ---- */
+    scope.querySelectorAll("[data-industry-showcase]").forEach(function (showcase) {
+      var pills = showcase.querySelectorAll("[data-industry-target]");
+      var slides = showcase.querySelectorAll("[data-industry-slide]");
+
+      function activateIndustry(targetKey) {
+        pills.forEach(function (pill) {
+          var isMatch = pill.getAttribute("data-industry-target") === targetKey;
+          pill.classList.toggle("is-active", isMatch);
+          pill.setAttribute("aria-selected", isMatch ? "true" : "false");
+        });
+        slides.forEach(function (slide) {
+          var isMatch = slide.getAttribute("data-industry-slide") === targetKey;
+          slide.classList.toggle("is-active", isMatch);
+        });
+      }
+
+      pills.forEach(function (pill) {
+        var targetKey = pill.getAttribute("data-industry-target");
+        pill.addEventListener("mouseenter", function () {
+          activateIndustry(targetKey);
+        });
+        pill.addEventListener("click", function (e) {
+          e.preventDefault();
+          activateIndustry(targetKey);
+        });
+        pill.addEventListener("focus", function () {
+          activateIndustry(targetKey);
+        });
+      });
+    });
+
     /* ---- FAQ: details-based ---- */
     scope.querySelectorAll("[data-faq]").forEach(function (wrap) {
       var items = wrap.querySelectorAll("details");

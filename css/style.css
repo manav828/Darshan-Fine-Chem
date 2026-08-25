@@ -3302,6 +3302,13 @@ main#main.is-transitioning {
 }
 
 /* ---------- Footer ISO Certification Badges ---------- */
+.footer-logo-wrap {
+  background: #ffffff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
 .footer-iso-cert {
   margin-top: 24px;
   display: flex;
@@ -3312,16 +3319,22 @@ main#main.is-transitioning {
 
 .footer-iso-row {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
 .footer-iso-row--top {
-  margin-left: 54px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-bottom: -15px;
   z-index: 2;
 }
 
 .footer-iso-row--bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
   z-index: 1;
 }
 
@@ -3412,9 +3425,140 @@ main#main.is-transitioning {
   text-align: center;
 }
 
-@media (max-width: 991px) {
-  .footer-iso-cert {
-    margin-inline: auto;
-    align-items: center;
+@media (max-width: 400px) {
+  .footer-iso-card {
+    width: 90px;
+    height: 102px;
   }
-}
+}
+
+/* ============================================================
+   INDUSTRIES SHOWCASE SECTION (Dynamic Hover Image Switcher)
+   ============================================================ */
+.industry-showcase {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  min-height: 520px;
+  border: 2px solid #0084C7;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 36px;
+  background: #000000;
+  margin-top: 10px;
+}
+
+.industry-screens {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.industry-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.45s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.05);
+}
+
+.industry-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.industry-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.industry-pills-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.industry-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 22px;
+  background: rgba(10, 37, 64, 0.82);
+  border: 1.5px solid rgba(0, 132, 199, 0.45);
+  border-radius: 999px;
+  color: #FFFFFF;
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  user-select: none;
+}
+
+.industry-pill .pill-chevron {
+  width: 15px;
+  height: 15px;
+  stroke: #38bdf8;
+  transition: transform 0.25s ease, stroke 0.25s ease;
+  flex-shrink: 0;
+}
+
+.industry-pill:hover,
+.industry-pill.is-active {
+  background: linear-gradient(135deg, rgba(0, 132, 199, 0.95), rgba(10, 37, 64, 0.98));
+  border-color: #38bdf8;
+  box-shadow: 0 6px 24px rgba(0, 132, 199, 0.45), 0 0 0 1px #38bdf8;
+  transform: translateY(-2px);
+  color: #FFFFFF;
+}
+
+.industry-pill:hover .pill-chevron,
+.industry-pill.is-active .pill-chevron {
+  stroke: #FFFFFF;
+  transform: translateX(3px);
+}
+
+@media (max-width: 1100px) {
+  .industry-pills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .industry-showcase {
+    min-height: 420px;
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+  .industry-pills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .industry-pill {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .industry-pills-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+
