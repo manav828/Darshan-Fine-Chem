@@ -225,7 +225,7 @@
             if (note) {
               note.textContent = data.message || (isCareer 
                 ? "Submission error. Please verify the fields or email your resume directly to info@dfcpl.in." 
-                : "Something went wrong. Please try again or write directly to info@dfcpl.in.");
+                : "Something went wrong. Please try again or write directly to sales@dfcpl.in.");
               note.style.color = "#dc2626";
               note.style.marginTop = "14px";
             }
@@ -235,7 +235,7 @@
           if (note) {
             note.textContent = isCareer 
               ? "Network error. Please try again or email your CV directly to info@dfcpl.in."
-              : "Network error. Please try again or email us directly at info@dfcpl.in.";
+              : "Network error. Please try again or email us directly at sales@dfcpl.in.";
             note.style.color = "#dc2626";
             note.style.marginTop = "14px";
           }
