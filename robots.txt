@@ -1,4 +1,4 @@
-# Darshan Fine Chem Private Limited — robots.txt
+﻿# Darshan Fine Chem Private Limited — robots.txt
 # Default: allow all crawlers, point to sitemap.
 
 User-agent: *
@@ -38,4 +38,4 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-Sitemap: https://www.darshanfinechem.com/sitemap.xml
+Sitemap: https://www.dfcpl.in/sitemap.xml
