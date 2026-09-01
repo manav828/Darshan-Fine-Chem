@@ -4,68 +4,68 @@
 
   <!-- ===== Core pages ===== -->
   <url>
-    <loc>https://www.darshanfinechem.com/</loc>
+    <loc>https://www.dfcpl.in/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/hero-plant.jpg</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/hero-plant.jpg</image:loc>
       <image:title>Darshan Fine Chem Private Limited — phosphorus derivatives manufacturing plant, Sayakha GIDC Gujarat</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/about.html</loc>
+    <loc>https://www.dfcpl.in/about.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/products.html</loc>
+    <loc>https://www.dfcpl.in/products.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/product-pcl3.png</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/product-pcl3.png</image:loc>
       <image:title>Phosphorus Trichloride PCl₃ — Darshan Fine Chem Private Limited</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/manufacturing.html</loc>
+    <loc>https://www.dfcpl.in/manufacturing.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/pipelines.jpg</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/pipelines.jpg</image:loc>
       <image:title>Darshan Fine Chem Private Limited manufacturing facility — phosphorus chemicals plant Gujarat</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/quality.html</loc>
+    <loc>https://www.dfcpl.in/quality.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/sustainability.html</loc>
+    <loc>https://www.dfcpl.in/sustainability.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/contact.html</loc>
+    <loc>https://www.dfcpl.in/contact.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/careers.html</loc>
+    <loc>https://www.dfcpl.in/careers.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -73,67 +73,67 @@
 
   <!-- ===== Individual product pages ===== -->
   <url>
-    <loc>https://www.darshanfinechem.com/product-phosphorus-trichloride.html</loc>
+    <loc>https://www.dfcpl.in/product-phosphorus-trichloride.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/product-pcl3.png</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/product-pcl3.png</image:loc>
       <image:title>Phosphorus Trichloride PCl₃ CAS 7719-12-2 — Darshan Fine Chem Private Limited India</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/product-phosphorus-oxychloride.html</loc>
+    <loc>https://www.dfcpl.in/product-phosphorus-oxychloride.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/product-pocl3.png</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/product-pocl3.png</image:loc>
       <image:title>Phosphorus Oxychloride POCl₃ CAS 10025-87-3 — Darshan Fine Chem Private Limited India</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/product-phosphorus-pentachloride.html</loc>
+    <loc>https://www.dfcpl.in/product-phosphorus-pentachloride.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/product-pcl5.png</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/product-pcl5.png</image:loc>
       <image:title>Phosphorus Pentachloride PCl₅ CAS 10026-13-8 — Darshan Fine Chem Private Limited India</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/product-phosphorus-pentoxide.html</loc>
+    <loc>https://www.dfcpl.in/product-phosphorus-pentoxide.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/product-p2o5.png</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/product-p2o5.png</image:loc>
       <image:title>Phosphorus Pentoxide P₂O₅ CAS 1314-56-3 — Darshan Fine Chem Private Limited India</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/product-triphenyl-phosphine.html</loc>
+    <loc>https://www.dfcpl.in/product-triphenyl-phosphine.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/product-tpp.png</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/product-tpp.png</image:loc>
       <image:title>Triphenyl Phosphine TPP CAS 603-35-0 — Darshan Fine Chem Private Limited India</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.darshanfinechem.com/product-polyphosphoric-acid.html</loc>
+    <loc>https://www.dfcpl.in/product-polyphosphoric-acid.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.darshanfinechem.com/assets/img/product-ppa.png</image:loc>
+      <image:loc>https://www.dfcpl.in/assets/img/product-ppa.png</image:loc>
       <image:title>Polyphosphoric Acid PPA CAS 8017-16-1 — Darshan Fine Chem Private Limited India</image:title>
     </image:image>
   </url>
